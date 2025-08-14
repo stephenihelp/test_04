@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: test-04-php
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    rootDir: .
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    healthCheckPath: /
